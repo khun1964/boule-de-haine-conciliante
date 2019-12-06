@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+
+<link href="./css/style.css" rel="stylesheet" media="all"
+	type="text/css" />
+
+<link href="./css/bootstrap.min.css" rel="stylesheet" media="all"
+	type="text/css" />
+	
+<link href="./css/bootstrap.css" rel="stylesheet" media="all"
+	type="text/css" />
+
+<script type="text/javascript" src="../js/bienvenue.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/boostrap.js"></script>
+
+
+<title>Bienvenue test js complet</title>
+</head>
+<body>
+	<header>
+
+
+		<h1 id="titreF">Bienvenue</h1>
+
+	</header>
+
+	<section>
+		<div id="form">
+			<form method="POST" action="acceuil.html">
+				<h2 id=titreForm">Accès à votre espace client</h2>
+
+				<div>
+					<label> votre Nom </label>
+
+					<!-- <label for="txNom">Nom: </label> <input type="text" id="txNom"
+							name="use_name"> -->
+
+					<input type="text" id="txNom" size="20"
+						onfocus="montrer('aideLogin');" onblur="cacher('aideLogin');" /> <br />
+					<label> Mot de passe</label>
+
+					<!-- <label for="txMdp">Mot de passe :</label> <input type="password"
+							id="txMdp" name="password"> -->
+
+					<input type="password" id="txMdp" size="20"
+						onfocus="montrer('aidePassword');"
+						onblur="cacher('aidePassword');" /> <br /> <input type="submit"
+						value="Connexion" class="bouton"
+						onclick="return validationLogin();" />
+
+					<div id="aidelogin" class="aide">
+						<p>Entrez votre identifiant</p>
+					</div>
+
+					<div id="aidePassword" class="aide">
+						<p>Entrez votre mot de passe</p>
+					</div>
+			</form>
+		</div>
+	</section>
+
+	<div id="info" ondbclick="alert('doubleclick!!')">double click</div>
+
+
+	<!-- <div id="inscript" onmouseover="alert('passage de la souris')">passage de la souris</div> -->
+
+
+	<!-- creation d'un footer-->
+	
+	
+
+	<footer>
+		<hr />
+		<p>plestin-les-gréves,levraoueg</p>
+
+	</footer>
+
+
+</body>
+</html>
